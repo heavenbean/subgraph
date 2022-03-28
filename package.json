@@ -1,0 +1,16 @@
+{
+  "name": "soccer",
+  "license": "UNLICENSED",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "deploy": "graph deploy --node https://api.thegraph.com/deploy/ hoangdn/soccer",
+    "create-local": "graph create --node http://localhost:8020/ hoangdn/soccer",
+    "remove-local": "graph remove --node http://localhost:8020/ hoangdn/soccer",
+    "deploy-local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 hoangdn/soccer"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "0.29.0",
+    "@graphprotocol/graph-ts": "0.26.0"
+  }
+}
